@@ -1,0 +1,60 @@
+Name: Yufei Lu
+USC NetId: yufeilu
+CSCI 455 PA1
+Spring 2021
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+Y.L.
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+1. Cannot resolve input types other than numbers.
+2. Do not work correctly when the number of trials are too large.
+3. When dragging the viewer window, if the width of the window is too short, bars and labels may overlap on each other.
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+----------------------------------------------
+ANSWERS TO ASSIGNMENT README QUESTIONS (if applicable):
+Q1:
+Code written by course staff and code from the textbook for this course
+
+Q2:
+The probability of two heads is 25%,
+the probability of two tails is 25%,
+the probability of one head and one tail is 50%,
+It's different because when tossing two coins, he first coin can be head or tail, and the second coin can be head or tail, so there are four possibilities when tossing two coins. Thus, in two of four situations the result is one head and one tail, which is 50%.
+
+Q3:
+500
+
+Q4:
+The largest value I tried where is still work correctly is 2147483647.
+When I try 2147483648 or larger, it has compile error: Exception in thread "main" java.util.InputMismatchException: For input string: "2147483648"
+2147483648 is the largest number an integer can represent, so the compile error occurs.
