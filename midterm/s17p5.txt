@@ -1,0 +1,21 @@
+public boolean hasDouble5or8(vals) {
+	boolean hasDouble5 = false;
+	boolean hasDouble8 = false;
+	for (int i =0; i < vals.length - 1; i++) {
+		if (vals[i] == 5 && vals[i + 1] == 5) {
+			hasDouble5 = true;
+		} 
+		if (vals[i] == 8 && vals[i + 1] == 8) {
+			hasDouble8 = true;
+		} 
+	}
+	if (hasDouble5 || hasDouble8) {
+		if (hasDouble5 && hasDouble8) {
+			return false;
+		}
+		return true;
+	}
+	else {
+		return false;
+	}
+}

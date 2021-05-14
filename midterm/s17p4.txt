@@ -1,0 +1,57 @@
+public class SlotMachine{  
+
+public static final int SHORT_PAY = -1;
+public static final int NUM_SYMBOLS = 6;
+
+private int token = 0;
+private Random random = new Random();
+private int a, b, c;
+
+public SlotMachine (int startTokens)  {
+	token = startToken;
+	int a =0;
+	int b = 0;
+	int c = 0; 
+}
+
+public int spin() {
+	a = random.nextInt(6);
+	b = random.nextInt(6);
+	c = random.nextInt(6);
+	int result = 1;
+	if (a == b && a == c) {		
+		if (a == 0) token -= result;
+		else {
+			result = 2 * a;
+			token -= result;
+		}
+		if (token < 0) {
+			return SHORT_PAY;
+		}
+		return result;
+	}
+	else {
+		token++;
+	}
+}
+
+public void addTokens(int numTokens) {
+	token += numTokens;
+}
+
+public int getTokensLeft() {
+	return token;
+}
+
+public int getReel1Symbol() {
+	return a;
+}
+
+public int getReel2Symbol() {
+	return b;
+}
+
+public int getReel3Symbol() {
+	return c;
+}
+}
