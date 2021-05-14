@@ -1,0 +1,54 @@
+Name: Yufei Lu
+USC NetID: yufeilu
+CS 455 PA4
+Spring 2021
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+Y.L.
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+
+----------------------------------------------
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+
+The AnagramDictionary class read in the dictionary. Words in AD is stored in a TreeMap. For every word in the dictionary, AD sort the word in alphabetic order and then treats the sorted string as the key of the TreeMap. The value of the TreeMap is a ArrayList of String, which is all the anagram words of the key.
+
+The Rack class takes in a string. In the public allSubsets method, I use a hash map to get the string only containing unique letters and the int array from the original string. The key of the HashMap is Character, which is each letter in the unique string. The value of the HashMap is the mutiplicity of each letter from unique, which is an Interger. 
+
+In the WordFinder class, to find all words that can be made from the rack, first, use an ArrayList to store all subsets of the rack. Then use another ArrayList to store all anagram words of all subsets. 
+To sort the words by score, use a TreeMap to store every word and its score so that the words are in alphabetic order. Then use an ArrayList of Map.Entry of that TreeMap, so that I can use sort() method of ArrayList and my own comparator to print out the words in a decreasing order of score. 
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+
+
+
+
